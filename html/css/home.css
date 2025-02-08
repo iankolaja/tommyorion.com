@@ -72,11 +72,11 @@ position: fixed;
     background-position: 50% 0%;
 }
 .hero-image-medium {
-    background-size: 80%;
+    background-size: 75%;
     background-position: 50% 25%;
 }
 .hero-image-small {
-    background-size: 125%;
+    background-size: 100%;
     background-position: 50% 50%;
 }
 .fa {
