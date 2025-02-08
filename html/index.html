@@ -32,8 +32,16 @@ body, html {
     height: 100%;
     line-height: 1.8;
 	scroll-behavior: smooth;
+	background-color:black;
 }
 /* Full height image header */
+	
+<div id="mc_embed_shell">
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+        #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 	
 </style>
 <body>
@@ -44,54 +52,67 @@ body, html {
 
 <div class="header-gradient"></div>
 <div class="header-menu-fixed">
+
+	<a href="javascript:void(0)" class="menu-item menu-item-nav w3-hide-large w3-hide-medium" style="margin:0; padding:0; color:white;" onclick="w3_open()">
+	  <i class="fa fa-bars"></i>
+	</a>
+	<a href="javascript:void(0)" class="menu-item menu-item-nav w3-hide-large w3-hide-small " style="margin:0; padding:0; color:white;" onclick="w3_open()">
+	  <i class="fa fa-bars w3-large"></i>
+	</a>
+	
 	<a href="#listen"><span class="menu-item menu-item-nav  w3-hide-small w3-hide-medium">LISTEN</span></a>
-	<a href="#preorder"><span class="menu-item menu-item-nav  w3-hide-small w3-hide-medium">PRE-ORDER</span></a>
+	<a href="#preorder"><span class="menu-item menu-item-nav  w3-hide-small w3-hide-medium">PREORDER</span></a>
 	<a href="#home"><img class="menu-item menu-logo w3-hide-small w3-hide-medium" src="images/logo.png" alt="TOMMY ORION"/></a>	
 	<a href="#home"><img class="menu-item menu-logo w3-hide-large" style="width:250px; height:auto; max-height: none;" src="images/logo.png" alt="TOMMY ORION"/></a>	
 	<a href="#subscribe"><span  class="menu-item menu-item-nav w3-hide-small w3-hide-medium">SUBSCRIBE</span></a>
 	<a href="#about"><span  class="menu-item menu-item-nav w3-hide-small w3-hide-medium">WHOMST?</span></a>
 
 
-	<!--
+
 	<!- Hide right-floated links on small screens and replace them with a menu icon ->
 
-	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-	  <i class="fa fa-bars"></i>
-	</a>
-	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-small" onclick="w3_open()">
-	  <i class="fa fa-bars w3-large"></i>
-	</a>
--->
+
+
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none; z-index:120;" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">CLOSE  <i class="fa fa-times-circle" style="margin-left:3px"></i></a>
-  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home"></i>  HOME</a>
-  <a href="https://soundcloud.com/iankolaja" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-music"></i>  MUSIC</a>
-  <a href="https://www.youtube.com/channel/UCVaE5mXzT_BvniRBhxCIQ3w" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-play"></i>  VIDEOS</a>
-  <a href="https://vimeo.com/iankolaja" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-film"></i>  FILM</a>
-  <a href="https://www.twitch.tv/iankoala" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-twitch"></i>  TWITCH</a>
-  <a href="./gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>  GALLERY</a>
-  <a href="./join.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>  SIGN UP</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home"></i>  HOME</a>
+  <a href="#listen" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-music"></i>  LISTEN</a>
+  <a href="#preorder"onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i>  PREORDER</a>
+  <a href="#subscribe" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>  SUBSCRIBE</a>
+  <a href="#about"  onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i>  WHOMST?</a>
 </nav>
 	
 <div id="home"></div>
 
 <!-- Header with full-height image for large display -->
-<div class="hero-image hero-image-wide w3-hide-small">
+<div class="hero-image w3-hide-medium w3-hide-small hero-image-large">
 </div>
 
-<div class="hero-image hero-image-tall w3-hide-medium w3-hide-large">
+<div class="hero-image w3-hide-medium w3-hide-large hero-image-small">
 </div>
+
+<div class="hero-image w3-hide-large w3-hide-small hero-image-medium">
+</div>
+	
+
+<div class="w3-center w3-padding-16 announcement-box" style="color:black;">
+	<h2 class="w3-wide">something good out now!</h2>
+	<a href="#listen" class="menu-item menu-item-nav" style="color:black;text-decoration: none;">LISTEN</a>
+</div>
+
 	
 <div class="w3-container" style="background-color:#fdd492;" id="listen">
 	<div class="w3-content w3-center w3-padding-64" style="max-width:600px">
     	<h2 class="w3-wide">LISTEN</h2>
 		<img src="images/listen_artwork.jpg" class="w3-card" style="width:60%">
-    	<h3 class="w3-wide">WHERE DID YOU GO?</h2>
+    	<h3 class="w3-wide" style="margin-bottom:32px">something good</h2>
 		
-		<a target="_blank" href="https://open.spotify.com/album/7wKiQNrKNMnNvt6Bc65i2V" style="text-decoration: none;color: inherit;">
+		<a target="_blank" 
+		   href="https://open.spotify.com/album/0Td1Sie30cj74awc93rTv5" 
+		   style="text-decoration: none;color: inherit;">
 			<div class="listen-row">
 				<div style="display: flex;align-items: center;">
 					<div><img class="listen-box" src="images/spotify.jpg"></div>
@@ -101,7 +122,9 @@ body, html {
 			</div>
 		</a>
 
-		<a target="_blank" href="https://music.apple.com/us/album/where-did-you-go-single/1784545780?uo=4" style="text-decoration: none;color: inherit;">
+		<a target="_blank" 
+		   href="https://music.apple.com/us/album/something-good-single/1784545656?uo=4&app=itunes&at=1001lry3&ct=dashboard" 
+		   style="text-decoration: none;color: inherit;">
 			<div class="listen-row">
 				<div style="display: flex;align-items: center;">
 					<div><img class="listen-box" src="images/itunes.jpg"></div>
@@ -111,11 +134,25 @@ body, html {
 			</div>
 		</a>
 
-		<a target="_blank" href="https://www.iheart.com/artist/id-43736451/albums/id-302887325" style="text-decoration: none;color: inherit;">
+		<a target="_blank" 
+		   href="https://www.iheart.com/artist/id-43736451/albums/id-302887354" 
+		   style="text-decoration: none;color: inherit;">
 			<div class="listen-row">
 				<div style="display: flex;align-items: center;">
 					<div><img class="listen-box" src="images/iheart.jpg"></div>
 					<div style="flex: 1;padding: 20px;">iHeartRadio </div>
+					<div style="padding: 20px;"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+				</div>
+			</div>
+		</a>
+
+		<a target="_blank" 
+		   href="https://www.deezer.com/us/album/681746571" 
+		   style="text-decoration: none;color: inherit;">
+			<div class="listen-row">
+				<div style="display: flex;align-items: center;">
+					<div><img class="listen-box" src="images/deezer.jpg"></div>
+					<div style="flex: 1;padding: 20px;">Deezer </div>
 					<div style="padding: 20px;"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
 				</div>
 			</div>
@@ -128,10 +165,27 @@ body, html {
 
 <div class="w3-container" style="background-color:#f686e0;" id="preorder">
 	<div class="w3-content w3-center w3-padding-64" style="max-width:600px">
-    	<h2 class="w3-wide">PRE-ORDER</h2>
+    	<h2 class="w3-wide">PREORDER</h2>
 		<img src="images/preorder_artwork.jpg" class="w3-card" style="width:60%">
-    	<h3 class="w3-wide">something good</h2>
-		<a target="_blank" href="https://music.apple.com/us/album/something-good-single/1784545656?uo=4&app=itunes&at=1001lry3&ct=dashboard" style="text-decoration: none;color: inherit;">
+    	<h3 class="w3-wide" style="margin-bottom:32px">FAVORITE SOUND</h2>
+		
+		<!--<a target="_blank" 
+		   
+		   href="https://accounts.spotify.com/en/authorize?client_id=4a85c6638c3743928bee71feacbbcbf5&redirect_uri=https%3A%2F%2Fdistrokid.com%2Fspotify%2Fcallback&state=448C&scope=user-follow-modify user-read-email user-follow-read user-library-modify user-read-birthdate playlist-modify-private user-read-recently-played user-top-read&response_type=code&show_dialog=false" style="text-decoration: none;color: inherit;">
+			
+			<div class="listen-row">
+				<div style="display: flex;align-items: center;">
+					<div><img class="listen-box" src="images/spotify.jpg"></div>
+					<div style="flex: 1;padding: 20px;">Spotify </div>
+					<div style="padding: 20px;"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+				</div>
+			</div>
+		</a>-->
+		
+		<a target="_blank" 
+		   
+		   href="https://music.apple.com/us/album/favorite-sound-ep/1784479711?uo=4&app=itunes&at=1001lry3&ct=dashboard" style="text-decoration: none;color: inherit;">
+			
 			<div class="listen-row">
 				<div style="display: flex;align-items: center;">
 					<div><img class="listen-box" src="images/itunes.jpg"></div>
@@ -140,16 +194,18 @@ body, html {
 				</div>
 			</div>
 		</a>
+		
+		
 	</div>
 </div>
 
 	
 <div class="w3-container" style="background-color:#fdd492;" id="subscribe">
-	<div class="w3-content w3-center w3-padding-64" style="max-width:600px">
+	<div class="w3-content w3-center w3-padding-64" style="max-width:600px;; ">
     	<h2 class="w3-wide">SUBCRIBE</h2>
 
 		<div id="mc_embed_signup" class="w3-form w3-center" style="width:100%; max-width:800px; margin:auto;">
-		<form action="https://iankolaja.us4.list-manage.com/subscribe/post?u=feed2c271a0abfb8f4e44b2d8&amp;id=c504a7431d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<form action="https://tommyorion.us19.list-manage.com/subscribe/post?u=e42c38bbfeb50057105bdc941&amp;id=2dba94bf24&amp;f_id=00cec2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			<div class="w3-padding-8 w3-medium" style="margin-bottom:10px; margin-top:4px;"> Keep updated on news and upcoming releases!</div>
 
 			<div class="mc-field-group w3-center" style="width:100%; margin:auto;">
@@ -162,11 +218,6 @@ body, html {
 				<input class="w3-input w3-border" style="width:100%" type="text" value="" name="FNAME" class="" id="mce-FNAME">
 			</div>
 
-			<div class="mc-field-group w3-center" style="width:100%; margin:auto; margin-top:10px;">
-				<label for="mce-MMERGE2" style="float:left;">Zip Code </label>
-				<input class="w3-input w3-border" style="width:100%;  margin-bottom:6px;" type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2">
-			</div>
-
 			<div id="mce-responses" class="clear">
 				<div class="response" id="mce-error-response" style="display:none"></div>
 				<div class="response" id="mce-success-response" style="display:none"></div>
@@ -177,7 +228,7 @@ body, html {
 
 		</form>
 		</div>
-		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+		<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[4]='PHONE';ftypes[4]='phone';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[7]='MMERGE7';ftypes[7]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 		
 	</div>
 </div>
@@ -186,7 +237,7 @@ body, html {
 <div class="w3-container" style="background-color:#f686e0;" id="about">
 	<div class="w3-content w3-center w3-padding-64" style="max-width:600px">
     	<h2 class="w3-wide">WHOMST?</h2>
-		<div class="w3-padding-8 w3-medium" style="margin-bottom:10px; margin-top:4px; text-align: justify;">Tommy Orion is a up-and-coming one man army: Producer. Singer. Songwriter. Instrumentalist. Engineer. He’s crafted his own music and visuals in his San Francisco apartment while going to Berkeley. He upcoming EP, “talking,” combines energetic and fun electronic production with unapologetically raw lyrics that tell stories of queer love and heartbreak. As his first major release, it showcases the wide range of sounds he commands as he works to establish his musical identity.<br>
+		<div class="w3-padding-8 w3-medium" style="margin-bottom:10px; margin-top:4px; text-align: justify;">Tommy Orion is a up-and-coming one man army: Producer. Singer. Songwriter. Instrumentalist. Engineer. He’s crafted his own music and visuals in his San Francisco apartment while going to Berkeley. He upcoming EP, “talking,” combines energetic and fun electronic production with unapologetically raw lyrics that tell stories of queer love and heartbreak. As his first major release, it showcases the wide range of sounds he commands as he works to establish his musical identity.<br><br>
 		Transcending genre, Tommy creates a variety of sounds that can both live in the club and comfort someone on a quiet night. He draws inspiration from many different sources. His music channels the sound of pop mainstays like The Weeknd, Dua Lipa, Slayyyter, and Artemas. He also finds company in the alternative indie scene with artists like Julien Baker, Conan Gray, ELIO, and Caroline Polachek.</div>
 	</div>
 </div>
